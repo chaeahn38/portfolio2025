@@ -3,7 +3,7 @@ const marquee = document.getElementById('marquee');
   // 전체 너비 저장용
   let marqueeWidth;
   let posX = 0;
-  const speed = 1; // 스크롤 속도 (px/frame)
+  const speed = 0.3; // 스크롤 속도 (px/frame)
 
   // 초기 너비 계산 (복사본 포함 전체 길이)
   function init() {
