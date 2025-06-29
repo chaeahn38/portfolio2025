@@ -1,0 +1,113 @@
+/* * === Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: black;
+  color: #fff;
+}
+
+body {
+  background: #dbdbdb;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* === Font Face === */
+@font-face {
+  font-family: "Eulyoo";
+  src: url("../fonts/Eulyoo1945-Regular.woff2") format("woff2"),
+    url("../fonts/Eulyoo1945-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Header Menu === */
+.header-menu {
+  width: 100vw;
+  display: flex;
+  position: relative;
+  padding: 0 0.625rem;
+}
+
+.menu {
+  width: 25%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  color: #0000ff;
+  position: relative;
+  padding-bottom: 0.2rem;
+}
+
+.menu a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+/* === Marquee === */
+.marquee-wrapper {
+  width: 100vw;
+  overflow: hidden;
+  padding: 0.625rem;
+}
+
+#marquee {
+  display: flex;
+  white-space: nowrap;
+}
+
+.stamp {
+  display: flex;
+  gap: 0.625rem;
+  margin-right: 0.625rem;
+  font-size: 1.25rem;
+}
+
+.location-stamp {
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  position: relative;
+  top: -0.0625rem;
+}
+
+.date-stamp {
+  font-family: "Courier New", Courier, monospace;
+  cursor: default;
+}
+
+.location-stamp a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* === Project Dropdown List === */
+#project-list {
+  position: absolute;
+  top: 100%;
+}
+
+#project-list ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+}
+
+#project-list li {
+  padding: 0.15rem 0;
+}
+
+#project-list li a:hover {
+  background-color: #0000ff;
+  color: #fff;
+}

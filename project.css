@@ -1,0 +1,171 @@
+/* === Font === */
+@font-face {
+  font-family: "Eulyoo";
+  src: url("../fonts/Eulyoo1945-Regular.woff2") format("woff2"),
+    url("../fonts/Eulyoo1945-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+body {
+  background: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* === Marquee === */
+.marquee-wrapper {
+  width: 100vw;
+  overflow: hidden;
+  padding: 0.625rem;
+}
+
+#marquee {
+  display: flex;
+  white-space: nowrap;
+}
+
+.stamp {
+  display: flex;
+  gap: 0.625rem;
+  margin-right: 0.625rem;
+  font-size: 1.25rem;
+}
+
+.location-stamp {
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  position: relative;
+  top: -0.0625rem;
+}
+
+.date-stamp {
+  font-family: "Courier New", Courier, monospace;
+  cursor: default;
+}
+
+.location-stamp a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* === Header Menu === */
+.header-menu {
+  width: 100vw;
+  display: flex;
+  position: relative;
+  padding: 0 0.625rem;
+}
+
+.menu {
+  width: 25%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  color: #0000ff;
+  position: relative;
+  padding-bottom: 0.2rem;
+}
+
+.menu a {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+/* === Language Toggle === */
+#lang-toggle {
+  text-decoration: underline;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* === Project List Dropdown === */
+#project-list {
+  position: absolute;
+  top: 100%;
+}
+
+#project-list ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  gap: 0.2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+}
+
+#project-list li a:hover {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+/* === Main Layout === */
+.project-container {
+  display: flex;
+  padding: 0rem 0.625rem;
+}
+
+.info {
+  width: 25%;
+  font-family: "Eulyoo";
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.slider {
+  width: 75%;
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+/* === Image Slider === */
+.slider img {
+  display: none;
+  width: 72rem;
+  object-fit: contain;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider img.active {
+  display: block;
+}
+
+/* === Navigation Zones for Slider === */
+.nav-zone {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+}
+
+.nav-left {
+  left: 0;
+  cursor: w-resize;
+}
+
+.nav-right {
+  right: 0;
+  cursor: e-resize;
+}
