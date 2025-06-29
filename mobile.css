@@ -1,0 +1,58 @@
+/* === Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* === Marquee === */
+.marquee-wrapper {
+  background-color: #0000ff;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  overflow: hidden;
+  padding: 0.625rem 0;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-content {
+  white-space: nowrap;
+  color: #fff;
+  font-size: 1.25rem;
+  padding-right: 4rem;
+}
+
+/* === Header Menu === */
+.header-menu {
+  background-color: #fff;
+  position: fixed;
+  top: 3.5rem;
+  z-index: 999;
+  width: 100vw;
+  display: flex;
+  padding: 0 0.625rem;
+  color: #0000ff;
+  font-size: 1.25rem;
+}
+
+/* === Marquee Animation === */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
