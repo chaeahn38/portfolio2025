@@ -62,6 +62,10 @@ body {
   color: #000;
 }
 
+.location-stamp a:hover {
+  color: #0000ff;
+}
+
 /* === Header Menu === */
 .header-menu {
   width: 100vw;
@@ -127,7 +131,7 @@ body {
 .info {
   width: 25%;
   font-family: "Eulyoo";
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -141,7 +145,7 @@ body {
 /* === Image Slider === */
 .slider img {
   display: none;
-  width: 72rem;
+  width: 65rem;
   object-fit: contain;
   transition: opacity 0.5s ease-in-out;
 }

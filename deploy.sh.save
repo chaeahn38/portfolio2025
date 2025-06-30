@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m "update: smooth marquee and CSS cleanup"
+git push origin main

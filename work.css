@@ -88,6 +88,10 @@ body {
   color: #000;
 }
 
+.location-stamp a:hover {
+  color: #0000ff;
+}
+
 /* === Project Dropdown List === */
 #project-list {
   position: absolute;

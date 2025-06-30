@@ -30,7 +30,7 @@ body {
 .marquee-content {
   white-space: nowrap;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding-right: 4rem;
 }
 

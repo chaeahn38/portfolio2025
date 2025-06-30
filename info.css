@@ -60,6 +60,10 @@ body {
   color: #000;
 }
 
+.location-stamp a:hover {
+  color: #0000ff;
+}
+
 .date-stamp {
   font-family: "Courier New", Courier, monospace;
   cursor: default;
