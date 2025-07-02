@@ -3,7 +3,11 @@
   width: 100vw;
   display: flex;
   position: relative;
-  padding: 0 0.625rem;
+}
+
+.menu:first-child,
+.menu:last-child {
+  padding: 0 0.5rem;
 }
 
 .menu {
@@ -12,13 +16,13 @@
   font-size: 1.25rem;
   color: #0000ff;
   position: relative;
-  margin: 0 0 0.5rem 0.18rem;
+  margin-bottom: 1rem;
 }
 
 .menu a {
   color: #0000ff;
   text-decoration: none;
-  padding: 0.8rem 0;
+  padding: 0.2rem 0;
 }
 
 .menu a:hover {
@@ -30,6 +34,11 @@
   .header-menu {
     flex-direction: column; /* 수직 정렬 */
     padding: 0 0.3rem;
+  }
+
+  .menu:first-child,
+  .menu:last-child {
+    padding: 0;
   }
 
   .menu {
