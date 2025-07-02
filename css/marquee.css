@@ -1,19 +1,39 @@
-/* === Marquee === */
 .marquee-wrapper {
   width: 100vw;
   overflow: hidden;
   margin: 0.5rem 0 1rem 0;
 }
 
-#marquee {
+.marquee {
   display: flex;
-  white-space: nowrap;
+  width: fit-content;
+  animation: scroll-marquee 40s linear infinite;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-content {
+  display: flex;
 }
 
 .stamp {
-  display: flex;
+  display: inline-flex;
+  white-space: nowrap;
+  flex-shrink: 0;
   font-size: 1.25rem;
   padding-right: 0.8rem;
+}
+
+.location-stamp,
+.date-stamp {
+  display: inline;
 }
 
 .location-stamp {
