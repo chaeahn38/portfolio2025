@@ -1,0 +1,53 @@
+/* === Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Font Face === */
+@font-face {
+  font-family: "Eulyoo";
+  src: url("/fonts/Eulyoo1945-Regular.woff2") format("woff2"),
+    url("/fonts/Eulyoo1945-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Imperial";
+  src: url("../fonts/NYTImperial-Regular.woff2") format("woff2"),
+    url("../fonts/NYTImperial-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Imperial";
+  src: url("../fonts/NYTImperial-Italic.woff2") format("woff2"),
+    url("../fonts/NYTImperial-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unica";
+  src: url("../fonts/Unica77-LL.woff2") format("woff2"),
+    url("../fonts/Unica77-LL.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+::selection {
+  background: black;
+  color: #fff;
+}
+
+body {
+  background: #fff;
+  font-family: "Unica", sans-serif;
+}

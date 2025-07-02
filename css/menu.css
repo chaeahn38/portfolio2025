@@ -1,0 +1,27 @@
+/* === Header Menu === */
+.header-menu {
+  width: 100vw;
+  display: flex;
+  position: relative;
+  padding: 0 0.625rem;
+}
+
+.menu {
+  width: 25%;
+  font-family: "Unica", sans-serif;
+  font-size: 1.25rem;
+  color: #0000ff;
+  position: relative;
+  margin: 0 0 0.5rem -0.18rem;
+}
+
+.menu a {
+  color: #0000ff;
+  text-decoration: none;
+  padding: 0.1rem 0;
+}
+
+.menu a:hover {
+  background-color: #0000ff;
+  color: #fff;
+}

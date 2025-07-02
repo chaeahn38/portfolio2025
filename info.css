@@ -1,100 +1,17 @@
-/* === Reset & Base === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-::selection {
-  background: black;
-  color: #fff;
-}
-
-body {
-  background: #fff;
-  font-family: "Times New Roman", Times, serif;
-}
-
-/* === Font Face === */
-@font-face {
-  font-family: "Eulyoo";
-  src: url("../fonts/Eulyoo1945-Regular.woff2") format("woff2"),
-    url("../fonts/Eulyoo1945-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* === Marquee === */
+/* === Marquee Fixed=== */
 .marquee-wrapper {
   background-color: #fff;
   position: fixed;
   top: 0;
   z-index: 1000;
-  width: 100vw;
-  overflow: hidden;
-  padding: 0.625rem;
 }
 
-#marquee {
-  display: flex;
-  white-space: nowrap;
-}
-
-.stamp {
-  display: flex;
-  gap: 0.625rem;
-  margin-right: 0.625rem;
-  font-size: 1.25rem;
-}
-
-.location-stamp {
-  font-family: "Times New Roman", Times, serif;
-  color: #000;
-  position: relative;
-  top: -0.0625rem;
-}
-
-.location-stamp a {
-  text-decoration: none;
-  color: #000;
-}
-
-.location-stamp a:hover {
-  color: #0000ff;
-}
-
-.date-stamp {
-  font-family: "Courier New", Courier, monospace;
-  cursor: default;
-}
-
-/* === Header Menu === */
+/* === Header Menu Fixed=== */
 .header-menu {
   background-color: #fff;
   position: fixed;
   top: 2.5rem;
   z-index: 999;
-  width: 100vw;
-  display: flex;
-  padding: 0 0.625rem;
-}
-
-.menu {
-  width: 25%;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.25rem;
-  padding-bottom: 0.2rem;
-}
-
-.menu a {
-  color: #0000ff;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  background-color: #0000ff;
-  color: #fff;
 }
 
 /* === Main Layout === */
@@ -102,10 +19,9 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  font-family: "Eulyoo";
+  font-family: "Unica", sans-serif;
   font-size: 1.25rem;
-  padding: 0 0.325rem;
-  margin-top: 4.5rem; /* marquee (2.5rem) + header (2rem) */
+  margin-top: 4.2rem;
 }
 
 /* === Info List (Sidebar) === */
@@ -123,10 +39,10 @@ body {
 
 .info {
   display: block;
-  padding: 0.6rem 0.7rem;
   color: #000;
   text-decoration: none;
   cursor: pointer;
+  padding: 0.5rem 0 0.4rem 0.5rem;
 }
 
 .info:hover {
@@ -145,7 +61,7 @@ body {
 .info-entry {
   font-size: 1.25rem;
   width: 50rem;
-  margin: 0 0.125rem 4rem;
+  margin: 0 0.125rem 4rem 0;
   line-height: 1.5;
   word-break: keep-all;
   scroll-margin-top: 4rem;

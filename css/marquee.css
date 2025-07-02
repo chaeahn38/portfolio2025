@@ -1,0 +1,38 @@
+/* === Marquee === */
+.marquee-wrapper {
+  width: 100vw;
+  overflow: hidden;
+  margin: 0.5rem 0 1rem 0;
+}
+
+#marquee {
+  display: flex;
+  white-space: nowrap;
+}
+
+.stamp {
+  display: flex;
+  font-size: 1.25rem;
+  padding-right: 0.8rem;
+}
+
+.location-stamp {
+  font-family: "Unica", sans-serif;
+  color: #000;
+  position: relative;
+}
+
+.date-stamp {
+  font-family: "Unica", sans-serif;
+  cursor: default;
+}
+
+.location-stamp a {
+  text-decoration: none;
+  color: #000;
+  padding-right: 0.3rem;
+}
+
+.location-stamp a:hover {
+  color: #0000ff;
+}
