@@ -1,6 +1,4 @@
-/* === Marquee Fixed=== */
 .marquee-wrapper {
-  background-color: #fff;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -8,7 +6,6 @@
 
 /* === Header Menu Fixed=== */
 .header-menu {
-  background-color: #fff;
   position: fixed;
   top: 2.5rem;
   z-index: 999;
