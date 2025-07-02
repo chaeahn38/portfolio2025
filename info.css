@@ -75,3 +75,31 @@
 .info-entry a:hover {
   color: #000;
 }
+
+@media screen and (max-width: 400px) {
+  /* === Fixed 해제 === */
+  .marquee-wrapper,
+  .header-menu,
+  .info-list {
+    position: static;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    margin-top: 0; /* fixed 헤더 없는 만큼 여백 제거 */
+  }
+
+  .info-list {
+    display: none;
+  }
+
+  .info-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 0 0.3rem 10rem 0.3rem;
+  }
+
+  .info-entry {
+    width: 100%;
+  }
+}

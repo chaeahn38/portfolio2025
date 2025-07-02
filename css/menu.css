@@ -12,16 +12,34 @@
   font-size: 1.25rem;
   color: #0000ff;
   position: relative;
-  margin: 0 0 0.5rem -0.18rem;
+  margin: 0 0 0.5rem 0.18rem;
 }
 
 .menu a {
   color: #0000ff;
   text-decoration: none;
-  padding: 0.1rem 0;
+  padding: 0.8rem 0;
 }
 
 .menu a:hover {
   background-color: #0000ff;
   color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+  .header-menu {
+    flex-direction: column; /* 수직 정렬 */
+    padding: 0 0.3rem;
+  }
+
+  .menu {
+    width: 100%; /* 한 줄 전체 사용 */
+    font-size: 1.4rem; /* 약간 작게 */
+    margin: 0 0 1rem 0;
+  }
+
+  .menu a {
+    display: inline-block;
+    padding: 0.2rem 0;
+  }
 }

@@ -36,3 +36,18 @@
 .location-stamp a:hover {
   color: #0000ff;
 }
+
+@media screen and (max-width: 400px) {
+  .marquee-wrapper {
+    margin: 0.25rem 0 0.5rem 0;
+  }
+
+  .stamp {
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+  }
+
+  .location-stamp a {
+    padding-right: 0.2rem;
+  }
+}

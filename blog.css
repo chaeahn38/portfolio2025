@@ -90,3 +90,42 @@
 .blog-content a:hover {
   color: #000;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .date-list {
+    width: 100%;
+    order: 2; /* 아래로 보냄 */
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.5rem 0.3rem 5rem 0.3rem;
+  }
+
+  .date {
+    width: 100%; /* 한 줄에 두 개씩 정렬 */
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .blog-content {
+    width: 100%;
+    order: 1; /* 위에 표시 */
+    padding: 0 0.3rem 10rem 0.3rem;
+  }
+
+  .blog-entry {
+    width: 100%;
+  }
+}

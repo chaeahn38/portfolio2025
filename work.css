@@ -1,4 +1,7 @@
 /* === Project Dropdown List === */
+body {
+  background: #c6c6c6;
+}
 
 #project-list {
   position: absolute;

@@ -48,3 +48,35 @@
   right: 0;
   cursor: e-resize;
 }
+
+@media screen and (max-width: 400px) {
+  .project-container {
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .slider {
+    width: 100%;
+    height: auto;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: none;
+  }
+
+  .slider img.active {
+    display: block;
+  }
+
+  .nav-zone {
+    width: 50%;
+    height: 100%;
+  }
+}
